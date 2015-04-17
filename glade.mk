@@ -22,13 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit some common Glade stuff.
+$(call inherit-product, vendor/glade/configs/common.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-PRODUCT_NAME := cm_cancro
+PRODUCT_NAME := glade_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := xiaomi

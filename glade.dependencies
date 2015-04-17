@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "gd",
+    "repository": "kernel_xiaomi_cancro",
+    "target_path": "kernel/xiaomi/cancro",
+    "revision": "5.1"
+  }
+]

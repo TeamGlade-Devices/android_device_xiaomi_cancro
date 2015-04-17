@@ -29,7 +29,6 @@
     <bool name="config_dreamsEnabledByDefault">false</bool>
     <bool name="config_dreamsActivatedOnDockByDefault">true</bool>
     <bool name="config_useDevInputEventForAudioJack">true</bool>
-    <bool name="config_radio_reset_on_regular_deactivation">false</bool>
     <bool name="config_hotswapCapable">true</bool>
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
     <bool name="config_cellBroadcastAppLinks">true</bool>
@@ -108,8 +107,6 @@
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">1</integer>
-
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
@@ -242,55 +239,12 @@
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
-            1 - Menu key
-            2 - Recent apps view in SystemUI
-            3 - Launch assist intent
-            4 - Voice Search
-            5 - In-app Search
+            1 - Recent apps view in SystemUI
+            2 - Launch assist intent
          This needs to match the constants in
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
-    <integer name="config_longPressOnHomeBehavior">4</integer>
-
-    <!-- Control the behavior when the user long presses the menu button.
-            0 - Nothing
-            1 - Menu key
-            2 - Recent apps view in SystemUI
-            3 - Launch assist intent
-            4 - Voice Search
-            5 - In-app Search
-         This needs to match the constants in
-         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-    -->
-    <integer name="config_longPressOnMenuBehavior">2</integer>
-
-    <!-- Hardware keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-            32 - Camera
-            64 - Volume rocker
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">71</integer>
-
-    <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-            32 - Camera
-            64 - Volume rocker
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+    <integer name="config_longPressOnHomeBehavior">1</integer>
 
     <!-- Disable lockscreen rotation by default -->
     <bool name="config_enableLockScreenRotation">true</bool>
@@ -325,9 +279,6 @@
          Otherwise, the device may fail to wake out of suspend reliably.
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
-
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
 
     <!-- Is the device LTE capable -->
     <bool name="config_lte_capable">false</bool>
